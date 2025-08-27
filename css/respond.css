@@ -1,0 +1,101 @@
+/* 1280px   이하 */
+@media screen and (max-width:1280px){
+    section .title{
+        font-size: 5rem;
+    }
+    .only-tab-list li a{
+        padding: 0.9rem 0.5rem;
+    }
+    .inner{
+        padding: 0 20px;
+    }
+    header{
+        >.inner{
+            ul{
+                &.gnb{
+                    gap: 1.3rem;
+                }
+            }
+        }
+        
+    }
+}
+/* 1024px 이하 */
+@media screen and (max-width:1024px){
+    /* 기본글자 14px */
+    html{
+        font-size: 14px;
+    }
+    /* 1. 제거하기 */
+    .m-hide{
+        display: none;
+    }
+    header{
+        >.inner{
+            ul{
+                &.main-menu{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    /* 2. 보이기 */
+    .ham-btn{
+        display: block;
+    }
+    /* 3. 100% 만들기 */
+    /* footer의 여백 */
+    footer{
+        >.inner{
+            display: block;
+            padding: 3rem 20px;
+            >.footer-right{
+                /* display: flex;
+                flex-direction: column-reverse; */
+                text-align: left;
+                .sns-list{
+                    margin-top: 1.5rem;
+                    justify-content: flex-start;
+                    margin-bottom: 20px;
+                }
+                .footer-menu{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+/* 768px 이하 */
+@media screen and (max-width:768px){
+    /* 기본글자 12px */
+    html{
+        font-size: 12px;
+    }
+    /* 1. 제거하기 */
+    /* header .inner  줄간격 */
+    header{
+        >.inner{
+            line-height: 56px;
+            h1.logo{
+                width: 110px;
+            }
+            ul{
+                &.main-menu{
+                    display: none;
+                }
+            }
+        }
+    }
+    .ham-btn{
+        img{
+            width: 24px;
+        }
+    }
+    /* 2. 보이기 */
+    /* 3. 100% 만들기 */
+}

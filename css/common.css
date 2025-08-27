@@ -1,0 +1,29 @@
+@import url(../font/pretendard.css);
+
+*   { 
+    margin: 0; padding: 0;
+    /* 모든 테두리와 여백이 높이와 너비 안에 포함되도록 */
+    box-sizing: border-box;
+}
+li  { list-style: none;}
+a   { 
+    text-decoration: none; 
+    /* color: #222; */
+    color:var(--defaultColor);/* 상속 */
+}
+img, video { 
+    vertical-align: middle;
+}
+em, i, address{ font-style: normal;}
+
+/* blind */
+.blind{
+    position: absolute;
+    top: -999px;
+}
+/* body */
+body{
+    font-family: Pretendard, '돋움', sans-serif;
+    /* font-size: 16px; */
+    color: #111;
+}
